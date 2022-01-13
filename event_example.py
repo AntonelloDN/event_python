@@ -60,13 +60,13 @@ if __name__ == "__main__":
     def on_second_lap_completed(s: object, 
         e: EventArgs) -> None:
         if isinstance(s, RacingCar):
-            print(f'1st lap... {e.name}')
+            print(f'2st lap... {e.name}')
             s.decrease_lap()
 
     def on_third_lap_completed(s: object, 
         e: EventArgs) -> None:
         if isinstance(s, RacingCar):
-            print(f'1st lap... {e.name}')
+            print(f'3st lap... {e.name}')
             s.decrease_lap()
     
     # create a RacingCar
@@ -90,5 +90,5 @@ if __name__ == "__main__":
 
     print (f'{car.laps} laps to go!')
     # 1st lap... BMW
-    # 1st lap... BMW
+    # 2st lap... BMW
     # 3 laps to go!
